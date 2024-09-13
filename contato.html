@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Inovação e Tecnologia na Mineração</title>
+</head>
+<body bgcolor="#e0f7fa">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>   <!-- Comando que puxa os link que acessa ás páginas -->
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Entre em Contato Conosco</h1> 
+
+            <audio controls autoplay>
+                <source src="audio/Toy Shopping - Jeremy Korpas.mp3" type="audio/mpeg"> <!--Comando para buscar o audio da pasta/ que aciona na estrutura -->
+            </audio>
+
+            <form action="mailto:exemplo@dominio.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br><br> <!-- Seção para selecionar o nome  -->
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br> <!-- Seção para selecionar o email  -->
+
+                <label for="subject">Assunto:</label>    <!-- Seção para selecionar o assunto  -->
+                <select id="subject" name="subject"> 
+                    <option value="informacao">Informação</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="outros">Outros</option>
+                </select><br><br>
+
+                <label>Preferências de Contato:</label>
+                <input type="radio" id="phone" name="contact" value="phone">   <!-- Seção para selecionar o contato  -->
+                <label for="phone">Telefone</label>
+                <input type="radio" id="email" name="contact" value="email" checked>
+                <label for="email">E-mail</label><br><br>
+
+                <label for="message">Mensagem:</label>   <!-- Seção para selecionar a  mensagem -->
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="date">Data Preferida para Contato:</label>  <!-- Seção para selecionar o contrato-->
+                <input type="date" id="date" name="date"><br><br>
+
+                <label for="time">Hora Preferida:</label>      <!-- Seção para selecionar a hora -->
+                <input type="time" id="time" name="time"><br><br>
+
+                <input type="submit" value="Enviar">    <!-- Botões para enviar e limpar o formulário -->
+                <input type="reset" value="Limpar">
+            </form>
+            <br>
+            <a href="index.html"><button>Voltar para o HOME</button></a> <!-- Comando para criar um botão para voltar no HOME -->
+        </section>
+    </main>
+
+    <footer>
+        <audio controls>
+            <source src="audio/Focus Object - Jeremy Korpas.mp3" type="audio/mpeg"> <!--Comando para buscar o audio da pasta/ que aciona na estrutura -->
+        </audio>
+    </footer>
+</body>
+</html>
